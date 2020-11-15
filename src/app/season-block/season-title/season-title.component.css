@@ -2,3 +2,12 @@
   display: flex;
   flex-direction: column;
 }
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 60px;
+  color: aliceblue;
+  text-shadow: 4px 4px 4px black;
+  transition: font-size 0.5s;
+}
+
