@@ -1,4 +1,27 @@
-<season-block class="red"></season-block>
-<season-block class="yellow"></season-block>
-<season-block class="green"></season-block>
-<season-block class="blue"></season-block>
+<season-block [season]="'spring'"
+              [seasonStartDate]="'20th March'"
+              [seasonEndDate]="'19th June'"
+              style="background-image: url({{springImagePath}})"
+              (changeBackgroundImageEvent)="changeBackgroundImage($event.season, $event.imagePath)">
+<!--              [ngClass]="blockHoverStatus"-->
+<!--              (mouseenter)="increaseSize()"-->
+<!--              (mouseleave)="decreaseSize()"-->
+</season-block>
+<season-block [season]="'summer'"
+              [seasonStartDate]="'20th June'"
+              [seasonEndDate]="'21th September'"
+              style="background-image: url({{summerImagePath}})"
+              (changeBackgroundImageEvent)="changeBackgroundImage($event.season, $event.imagePath)">
+</season-block>
+<season-block [season]="'fall'"
+              [seasonStartDate]="'22th September'"
+              [seasonEndDate]="'20th December'"
+              style="background-image: url({{fallImagePath}})"
+              (changeBackgroundImageEvent)="changeBackgroundImage($event.season, $event.imagePath)">
+</season-block>
+<season-block [season]="'winter'"
+              [seasonStartDate]="'21th December'"
+              [seasonEndDate]="'19th March'"
+              style="background-image: url({{winterImagePath}})"
+              (changeBackgroundImageEvent)="changeBackgroundImage($event.season, $event.imagePath)">
+</season-block>

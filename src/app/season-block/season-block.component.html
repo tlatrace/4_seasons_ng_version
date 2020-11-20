@@ -1,3 +1,8 @@
-<season-date></season-date>
-<season-title></season-title>
-<season-date></season-date>
+<season-date [dateType]="'start date'"
+             [startDate]="seasonStartDate"></season-date>
+
+<season-title [season]="season"
+  (click)="changeBackgroundImage()"></season-title>
+
+<season-date [dateType]="'end date'"
+             [endDate]="seasonEndDate"></season-date>

@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+p:hover {
+  cursor: pointer;
+}
+
 p {
   font-family: "Times New Roman", Times, serif;
   font-size: 60px;
