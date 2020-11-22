@@ -2,11 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { SeasonBlockComponent } from './season-block/season-block.component';
-import { SeasonTitleComponent } from './season-block/season-title/season-title.component';
-import { SeasonDateComponent } from './season-block/season-date/season-date.component';
-import { ToolBarComponent } from './tool-bar/tool-bar.component';
-import { ImageZoneComponent } from './image-zone/image-zone.component';
+import { SeasonBlockComponent } from './components/image-zone/season-block/season-block.component';
+import { SeasonTitleComponent } from './components/image-zone/season-block/season-title/season-title.component';
+import { SeasonDateComponent } from './components/image-zone/season-block/season-date/season-date.component';
+import { ImageZoneComponent } from './components/image-zone/image-zone.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatMenuModule} from '@angular/material/menu';
+import { MainNavComponent } from './components/main-nav/main-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -14,11 +22,19 @@ import { ImageZoneComponent } from './image-zone/image-zone.component';
     SeasonBlockComponent,
     SeasonTitleComponent,
     SeasonDateComponent,
-    ToolBarComponent,
-    ImageZoneComponent
+    ImageZoneComponent,
+    MainNavComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

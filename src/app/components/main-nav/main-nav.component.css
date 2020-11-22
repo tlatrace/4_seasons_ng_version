@@ -1,0 +1,36 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  background: transparent;
+  height: 0;
+}
+
+.mat-toolbar div {
+  margin-top: 5%;
+}
+
+.mat-toolbar div span {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  color: aliceblue;
+  text-shadow: 4px 4px 4px black;
+  transition: font-size 0.5s;
+}
+
+.hidden {
+  display: none;
+}

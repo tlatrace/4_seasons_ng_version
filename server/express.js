@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const keys = require('./keys');
 
 const app = express();
@@ -8,6 +9,7 @@ const port = 3000;
 
 //middleware qui transforme l'objet req en json pour toutes les requêtes
 app.use(bodyParser.json());
+app.use(cors());
 
 //import routes
 const homeRoute = require('./routes/home');
